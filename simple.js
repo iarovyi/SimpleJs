@@ -1,10 +1,17 @@
+/*!
+ * SimpleJs class-event system.
+ * https://github.com/iarovyi/SimpleJs
+ *
+ * Released under the MIT license
+ * https://github.com/iarovyi/SimpleJs/blob/master/LICENSE
+ */
 (function(global) {
 	//'use strict';
 	var Simple = {},
 		mixins = {};
 
 	function isArray(obj) {
-		return Object.prototype.toString.call(obj) === '[object Array]'
+		return Object.prototype.toString.call(obj) === "[object Array]";
 	}
 
 	function namespace(name, root) {
@@ -29,7 +36,7 @@
 	}
 
 	function createMixin(fullName, methods) {
-		var segments = fullName.split('.'),
+		var segments = fullName.split("."),
 			mixinName = segments.pop(),
 			root = namespace(segments, mixins);
 
@@ -37,7 +44,7 @@
 	}
 
 	function createClass(classFullName, baseClass, props) {
-		var segments = classFullName.split('.'),
+		var segments = classFullName.split("."),
 			className = segments.pop(),
 			root = namespace(segments),
 			initiator = function() {
@@ -73,7 +80,7 @@
 
 	var eventBase = {
 		__getEvent: function (eventString) {
-			this.hasOwnProperty('__events') || (this.__events = {});
+			this.hasOwnProperty("__events") || (this.__events = {});
 			var path = eventString.split('.').reverse(),
 				eventName = path.pop(),
 				event = this.__events[eventName] || (this.__events[eventName] = {}),
