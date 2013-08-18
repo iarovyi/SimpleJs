@@ -49,7 +49,7 @@ Simple.defineClass("App.Sport.SportCar", App.Car, {
 Mixins
 ================================
  Sometimes we want add some logic to many classes that doesn't have common base class. In this case we can define
- mixin - set of methods and properties that will be added to any classes we want.
+ mixin - set of methods and properties that will be added to any class we want.
  We can define mixin as: 
 ```
  Simple.defineMixin("myExtension", {
@@ -93,7 +93,7 @@ nissan.off('run');
 Event namespaces
 -------------------------
 Javascript benefit from usage of anonymous functions and mostly it's not convinient to keep rererence to subscrbed method
-that why jQuery has such a feature as event namespace. With SimpleJs can trigger or remove handlers not only for some event but also we
+that why jQuery has such a feature as event namespace. With SimpleJs we can trigger or remove handlers not only for some event but also we
 can do it to some subset of handlers of some event. Namespases can be many-level nested.
 
 ```
