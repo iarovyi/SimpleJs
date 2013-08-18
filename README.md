@@ -1,7 +1,7 @@
 SimpleJs
 ========
 
-[SimpleJs](https://github.com/iarovyi/SimpleJs/blob/master/simple.js) is small (hundred code lines or 2kb size) and simple class-event system.
+[SimpleJs](https://github.com/iarovyi/SimpleJs/blob/master/simple.js) is small (hundred code lines or less than 2kb size) and simple class-event system.
  With SimpleJs we can build complex and clear javascript logic that hard to implement without classic inheritance.
  
  So SimpleJs creates:
