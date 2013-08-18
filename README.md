@@ -1,7 +1,7 @@
 SimpleJs
 ========
 
-[SimpleJs](https://github.com/iarovyi/SimpleJs/blob/master/simple.js) is small (hundred code lines or 2kb size) and simple class-event system.
+[SimpleJs](https://github.com/iarovyi/SimpleJs/blob/master/simple.js) is small (hundred code lines or less than 2kb size) and simple class-event system.
  With SimpleJs we can build complex and clear javascript logic that hard to implement without classic inheritance.
  
  So SimpleJs creates:
@@ -12,6 +12,7 @@ Where to use SimpleJs?
 -------------------------
 Mostly web sites doesn't need classes because it relatively simple but sometimes inheritance can make code simplier and cleaner.
 SimpleJs is a good choice in this case because its tiny and brings us all the power of events and inheritance.
+Another benefit of SimpleJs is that it has readable structure in console, not all libraries has the same.
 
  
 Inheritance
@@ -49,7 +50,7 @@ Simple.defineClass("App.Sport.SportCar", App.Car, {
 Mixins
 ================================
  Sometimes we want add some logic to many classes that doesn't have common base class. In this case we can define
- mixin - set of methods and properties that will be added to any classes we want.
+ mixin - set of methods and properties that will be added to any class we want.
  We can define mixin as: 
 ```
  Simple.defineMixin("myExtension", {
@@ -93,7 +94,7 @@ nissan.off('run');
 Event namespaces
 -------------------------
 Javascript benefit from usage of anonymous functions and mostly it's not convinient to keep rererence to subscrbed method
-that why jQuery has such a feature as event namespace. With SimpleJs can trigger or remove handlers not only for some event but also we
+that why jQuery has such a feature as event namespace. With SimpleJs we can trigger or remove handlers not only for some event but also we
 can do it to some subset of handlers of some event. Namespases can be many-level nested.
 
 ```
