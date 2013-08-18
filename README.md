@@ -14,6 +14,8 @@ Mostly web sites doesn't need classes because it relatively simple but sometimes
 SimpleJs is a good choice in this case because its tiny and brings us all the power of events and inheritance.
 Another benefit of SimpleJs is that it has readable structure in console, not all libraries has the same.
 
+![alt tag](https://raw.github.com/iarovyi/SimpleJs/master/simplejs_console.png)
+
  
 Inheritance
 ================================
